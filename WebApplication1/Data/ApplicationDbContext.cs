@@ -6,6 +6,7 @@ namespace WebApplication1.Data;
 public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<Intern>  Interns { get; set; }
+    public DbSet<User>  Users { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
